@@ -1,0 +1,36 @@
+nohup: ignoring input
+before / Route
+Connected
+(node:16165) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+/login Route
+[0mGET /login [36m304 [0m11.850 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.962 ms - -[0m
+login
+{ _id: 5c08464107665c3bfac1ce19,
+  username: 'bob',
+  hashed_password: 'gbY32PzSxtpjWeaWMROhFw3nleS3JbhNHgtM/Z7FjOk=',
+  email: 'bob@bob.com',
+  __v: 0,
+  color: 'red' }
+[0mPOST /login [36m302 [0m40.285 ms - 46[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T16:25:11.047Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c08464107665c3bfac1ce19',
+  username: 'bob',
+  msg: 'Authenticated as bob',
+  color: 'red' }
+/ Route if user
+[0mGET / [32m200 [0m3.954 ms - 770[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.772 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.741 ms - -[0m
+[0mGET /user/profile [36m304 [0m10.168 ms - -[0m
+/logout Route
+[0mGET /logout [36m302 [0m4.862 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m2.266 ms - 722[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.774 ms - -[0m
